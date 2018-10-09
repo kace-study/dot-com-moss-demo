@@ -1,0 +1,50 @@
+.navbar {
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.3);
+}
+
+.navbar-brand,
+.nav-item a {
+  color: #fff;
+  opacity: 0.8;
+}
+
+.navbar-brand:hover,
+.nav-item a:hover {
+  color: #fff;
+  opacity: 1;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+#main-navbar-toggler:focus {
+  outline: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#home-section {
+  background: url(../img/bg-landing.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 700px;
+}
+
+#home-section .home-inner {
+  padding-top: 250px;
+}
+
+.more-detail {
+  margin-top: 250px;
+  opacity: 0.8;
+}
+
+.more-detail small i {
+  vertical-align: middle;
+}
+
+@media (min-width: 768px) {
+  .border-right-gray {
+    border-right: 1px solid rgba(1, 1, 1, 0.1);
+  }
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Bootstrap LoopLAB</title>
+</head>
+
+<body data-spy="scroll" data-target="#main-nav" id="home">
+
+  <nav id="main-nav" class="navbar navbar-expand-sm fixed-top">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">苔どっとこむ</a>
+      <button id="main-navbar-toggler" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="#signin" class="nav-link">SIGN IN</a>
+          </li>
+          <li class="nav-item">
+            <a href="#signup" class="nav-link">SIGN UP</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HOME SECTION -->
+  <header id="home-section">
+    <div class="home-inner container">
+      <div class="row">
+        <div class="col text-white text-center">
+          <h2 class="display-4 d-none d-md-block">緑をもっと身近に</h2>
+          <h1 class="d-md-none d-sm-block">緑をもっと身近に</h1>
+          <p>苔どっとこむは苔のためのSNSです</p>
+
+          <!-- SINEUP -->
+          <div id="signup-button-group" class="mx-auto">
+            <button class="btn btn-outline-light" type="button">SINE IN</button>
+            <button class="btn btn-outline-light" type="button">SINE UP</button>
+          </div>
+
+          <!-- MORE DETAIL -->
+          <div class="more-detail">
+            <small><i class="fa fa-angle-down"></i> More Details</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HOME DETAILS -->
+  <section id="home-details" class="py-5">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col text-center">
+          <h4 class="detail-title">苔を通して人や企業とつながり、趣味を広げよう。無料です。</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 mb-4 text-center border-right-gray">
+          <i class="fas fa-seedling fa-3x mb-4"></i>
+          <h3>鑑賞する</h3>
+          <p>他のユーザーの投稿から<br>お気に入りの苔を見つけよう</p>
+        </div>
+        <div class="col-md-4 mb-4 text-center border-right-gray">
+          <i class="fas fa-images fa-3x mb-4"></i>
+          <h3>投稿する</h3>
+          <p>写真や記事を投稿して<br>苔への想いを共有しよう</p>
+        </div>
+        <div class="col-md-4 mb-4 text-center">
+          <i class="fas fa-share-alt fa-3x mb-4"></i>
+          <h3>繋がる</h3>
+          <p>ユーザーやお店をフォローして<br>苔仲間を増やそう</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="main-footer" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center py-4">
+          <p>Copyright &copy; <span id="year"></span> by kace study</p>
+          <button class="btn btn-outline-dark" type="button" data-toggle="modal" data-target="#contactModal">Contact Us</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CONTACT MODAL -->
+  <div class="modal fade text-dark" id="contactModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Contact Us</h5>
+          <button class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-outline-dark btn-block" type="button">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script>
+    // get the current year for the copyright
+    $('#year').text(new Date().getFullYear());
+  </script>
+</body>
+
+</html>
